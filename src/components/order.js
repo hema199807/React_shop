@@ -141,7 +141,7 @@ const Order = () => {
                     <h3 style={{marginBottom:0}}>Quantity: {quantityValue}</h3>
                     <h3 style={{marginBottom:0}}>Items: {orderArr.length}</h3>
                     <h3 style={{marginBottom:0}}>Total amount:</h3>
-                    <div style={{marginTop:10+"px"}}><i className="fas fa-rupee-sign"></i> <span id="cancle-amount">{amount}</span> {quantityValue===1?<span className="off-span">10% off <span className="amount-display"><i className="fas fa-rupee-sign"></i> {amount-Math.round(amount*(10/100))} </span></span>:<span className="off-span">15% off <span className="amount-display"><i className="fas fa-rupee-sign"></i> {amount-Math.round(amount*(15/100))} </span></span>}</div>
+                    <div style={{marginTop:10+"px"}}><i className="fas fa-rupee-sign"></i><span id="cancle-amount">{amount}</span> {quantityValue===1?<span className="off-span">10% off <span className="amount-display"><i className="fas fa-rupee-sign"></i>{amount-Math.round(amount*(10/100))} </span></span>:<span className="off-span">15% off <span className="amount-display"><i className="fas fa-rupee-sign"></i>{amount-Math.round(amount*(15/100))} </span></span>}</div>
                     <button id="order-place-btn" onClick={handleOrder}>Place Order</button>
             </div>
         </div>
